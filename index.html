@@ -417,94 +417,195 @@
       <div class="section-header">
         <span class="section-num mono">04</span>
         <h2 class="section-title">Coffee Cart — Proyecto destacado</h2>
-        <p class="section-sub">Pipeline de QA end-to-end con infraestructura cloud</p>
+        <p class="section-sub">Pipeline de QA end-to-end con infraestructura cloud real</p>
       </div>
 
       <div class="featured-intro">
         <p>
           Este repositorio es la demostración más completa de mis capacidades como QA Automation Engineer.
-          Integra múltiples herramientas de testing en un pipeline automatizado con Jenkins, cada suite
-          corriendo en su propio contenedor Docker, y servicios AWS simulados con LocalStack para
-          almacenamiento y validación de resultados.
+          Integra 6 tipos de testing distintos en un pipeline Jenkins de 10 stages, cada suite aislada en su
+          propio contenedor Docker, con servicios AWS reales simulados via LocalStack para almacenamiento,
+          validación automática y trazabilidad de resultados.
         </p>
+        <a href="https://github.com/MonacoSimon/qa-repository-coffee-cart" target="_blank" class="btn btn-primary" style="margin-top:1.5rem;display:inline-flex;">
+          Ver repositorio en GitHub →
+        </a>
       </div>
 
-      <div class="pipeline-visual">
-        <div class="pipeline-title mono">Pipeline flow</div>
-        <div class="pipeline-flow">
-          <div class="pipeline-node pn-jenkins">
-            <span class="pn-label">Jenkins</span>
-            <span class="pn-sub mono">CI/CD</span>
+      <!-- MÉTRICAS REALES -->
+      <div class="cc-metrics reveal">
+        <div class="cc-metric">
+          <span class="cc-metric-num accent">10</span>
+          <span class="cc-metric-label mono">stages en el pipeline</span>
+        </div>
+        <div class="cc-metric">
+          <span class="cc-metric-num accent">6</span>
+          <span class="cc-metric-label mono">tipos de testing</span>
+        </div>
+        <div class="cc-metric">
+          <span class="cc-metric-num accent">4</span>
+          <span class="cc-metric-label mono">servicios AWS</span>
+        </div>
+        <div class="cc-metric">
+          <span class="cc-metric-num accent">4</span>
+          <span class="cc-metric-label mono">cargas JMeter (20/50/80/100 users)</span>
+        </div>
+        <div class="cc-metric">
+          <span class="cc-metric-num accent">66</span>
+          <span class="cc-metric-label mono">commits en main</span>
+        </div>
+      </div>
+
+      <!-- PIPELINE STAGES REALES -->
+      <div class="pipeline-section reveal">
+        <div class="pipeline-section-title mono">Jenkinsfile — 10 stages del pipeline real</div>
+        <div class="pipeline-stages">
+          <div class="ps-item">
+            <span class="ps-num mono">01</span>
+            <div class="ps-content">
+              <span class="ps-name">Clean up</span>
+              <span class="ps-desc mono">Limpia contenedores y redes previas</span>
+            </div>
           </div>
-          <div class="pipeline-arrow">→</div>
-          <div class="pipeline-node pn-docker">
-            <span class="pn-label">Docker</span>
-            <span class="pn-sub mono">Compose</span>
+          <div class="ps-arrow">↓</div>
+          <div class="ps-item">
+            <span class="ps-num mono">02</span>
+            <div class="ps-content">
+              <span class="ps-name">API Tests — Newman</span>
+              <span class="ps-desc mono">Colección Postman · reportes JSON + XML + JUnit</span>
+            </div>
           </div>
-          <div class="pipeline-arrow">→</div>
-          <div class="pipeline-suites">
-            <div class="suite-node">Cypress</div>
-            <div class="suite-node">Newman</div>
-            <div class="suite-node">JMeter</div>
-            <div class="suite-node">ZAP</div>
+          <div class="ps-arrow">↓</div>
+          <div class="ps-item">
+            <span class="ps-num mono">03</span>
+            <div class="ps-content">
+              <span class="ps-name">Cypress E2E</span>
+              <span class="ps-desc mono">Tests de interfaz en Docker · reportes HTML</span>
+            </div>
           </div>
-          <div class="pipeline-arrow">→</div>
-          <div class="pipeline-node pn-aws">
-            <span class="pn-label">AWS</span>
-            <span class="pn-sub mono">LocalStack</span>
+          <div class="ps-arrow">↓</div>
+          <div class="ps-item">
+            <span class="ps-num mono">04</span>
+            <div class="ps-content">
+              <span class="ps-name">JMeter Performance</span>
+              <span class="ps-desc mono">20 / 50 / 80 / 100 usuarios · .jtl + dashboard</span>
+            </div>
+          </div>
+          <div class="ps-arrow">↓</div>
+          <div class="ps-item">
+            <span class="ps-num mono">05</span>
+            <div class="ps-content">
+              <span class="ps-name">OWASP ZAP Security</span>
+              <span class="ps-desc mono">Análisis de vulnerabilidades · reporte HTML</span>
+            </div>
+          </div>
+          <div class="ps-arrow">↓</div>
+          <div class="ps-item">
+            <span class="ps-num mono">06</span>
+            <div class="ps-content">
+              <span class="ps-name">LocalStack Init</span>
+              <span class="ps-desc mono">Levanta infraestructura AWS local</span>
+            </div>
+          </div>
+          <div class="ps-arrow">↓</div>
+          <div class="ps-item">
+            <span class="ps-num mono">07</span>
+            <div class="ps-content">
+              <span class="ps-name">Cloud Setup</span>
+              <span class="ps-desc mono">S3 · SQS · DynamoDB · Lambda con boto3</span>
+            </div>
+          </div>
+          <div class="ps-arrow">↓</div>
+          <div class="ps-item ps-item-post">
+            <span class="ps-num mono">post</span>
+            <div class="ps-content">
+              <span class="ps-name">Always · Upload + Poll</span>
+              <span class="ps-desc mono">Sube reportes a S3 · consulta SQS para pass/fail · apaga contenedores</span>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="tools-detail">
-        <div class="tool-card reveal">
-          <div class="tool-icon ti-cypress">E2E</div>
-          <h4 class="tool-name">Cypress</h4>
-          <p class="tool-desc">Pruebas end-to-end automatizadas sobre la interfaz de Coffee Cart. Corre en contenedor
-            Docker y genera reportes HTML en cada build.</p>
+      <!-- ARQUITECTURA AWS -->
+      <div class="cc-arch reveal">
+        <div class="cc-arch-title mono">Arquitectura AWS (LocalStack)</div>
+        <div class="cc-arch-grid">
+          <div class="arch-card">
+            <div class="arch-icon">S3</div>
+            <h4>qa-reports-coffee-cart</h4>
+            <p>Reportes por suite y fecha. Estructura: <span class="mono">suite/YYYYMMDD-HHMMSS/</span></p>
+          </div>
+          <div class="arch-card">
+            <div class="arch-icon">λ</div>
+            <h4>Lambda — Validación</h4>
+            <p>Evalúa umbrales de calidad por suite. Retorna <span class="mono">PASS / FAIL</span> automáticamente.</p>
+          </div>
+          <div class="arch-card">
+            <div class="arch-icon">DB</div>
+            <h4>DynamoDB — qa_executions</h4>
+            <p>Historial de builds. Métricas por ejecución para análisis de tendencias entre versiones.</p>
+          </div>
+          <div class="arch-card">
+            <div class="arch-icon">SQS</div>
+            <h4>Cola de fallos + DLQ</h4>
+            <p>Notificaciones de errores por suite. El pipeline consulta la cola para determinar el build final.</p>
+          </div>
         </div>
-        <div class="tool-card reveal">
-          <div class="tool-icon ti-newman">API</div>
-          <h4 class="tool-name">Newman</h4>
-          <p class="tool-desc">Ejecución CLI de colecciones Postman para validar todos los endpoints REST. Reportes JSON
-            y XML integrados en el pipeline.</p>
+      </div>
+
+      <!-- CAPAS DE TESTING -->
+      <div class="cc-testing-layers reveal">
+        <div class="cc-arch-title mono">Capas de testing cubiertas</div>
+        <div class="testing-layers-grid">
+          <div class="layer-row">
+            <span class="layer-badge lb-e2e">E2E</span>
+            <div class="layer-info">
+              <strong>Cypress</strong>
+              <span>Flujos de usuario en interfaz — contenedor Docker — reportes HTML</span>
+            </div>
+          </div>
+          <div class="layer-row">
+            <span class="layer-badge lb-api">API</span>
+            <div class="layer-info">
+              <strong>Newman / Postman</strong>
+              <span>Endpoints REST — colecciones parametrizadas — salida JSON + XML + JUnit</span>
+            </div>
+          </div>
+          <div class="layer-row">
+            <span class="layer-badge lb-perf">PERF</span>
+            <div class="layer-info">
+              <strong>JMeter</strong>
+              <span>Carga con 20, 50, 80 y 100 usuarios — dashboard de tiempos de respuesta y error rate</span>
+            </div>
+          </div>
+          <div class="layer-row">
+            <span class="layer-badge lb-sec">SEC</span>
+            <div class="layer-info">
+              <strong>OWASP ZAP</strong>
+              <span>Escaneo de vulnerabilidades — clasificación por riesgo — reporte HTML</span>
+            </div>
+          </div>
+          <div class="layer-row">
+            <span class="layer-badge lb-a11y">A11Y</span>
+            <div class="layer-info">
+              <strong>Axe / Lighthouse</strong>
+              <span>Cumplimiento WCAG — accesibilidad y performance — reportes HTML</span>
+            </div>
+          </div>
+          <div class="layer-row">
+            <span class="layer-badge lb-cloud">CLOUD</span>
+            <div class="layer-info">
+              <strong>boto3 / LocalStack</strong>
+              <span>S3, Lambda, DynamoDB, SQS — scripts Python — integración CI/CD</span>
+            </div>
+          </div>
         </div>
-        <div class="tool-card reveal">
-          <div class="tool-icon ti-jmeter">PERF</div>
-          <h4 class="tool-name">JMeter</h4>
-          <p class="tool-desc">Pruebas de carga con 20, 50, 80 y 100 usuarios concurrentes. Análisis de tiempos de
-            respuesta y tasa de error.</p>
-        </div>
-        <div class="tool-card reveal">
-          <div class="tool-icon ti-zap">SEC</div>
-          <h4 class="tool-name">OWASP ZAP</h4>
-          <p class="tool-desc">Análisis de seguridad automatizado. Detección de vulnerabilidades y generación de reporte
-            HTML con clasificación por riesgo.</p>
-        </div>
-        <div class="tool-card reveal">
-          <div class="tool-icon ti-s3">S3</div>
-          <h4 class="tool-name">AWS S3</h4>
-          <p class="tool-desc">Almacenamiento de reportes organizados por suite y fecha. Bucket <span
-              class="mono">qa-reports-coffee-cart</span> con estructura jerárquica.</p>
-        </div>
-        <div class="tool-card reveal">
-          <div class="tool-icon ti-lambda">λ</div>
-          <h4 class="tool-name">AWS Lambda</h4>
-          <p class="tool-desc">Función de validación automática de resultados. Evalúa umbrales de calidad por suite y
-            retorna PASS/FAIL.</p>
-        </div>
-        <div class="tool-card reveal">
-          <div class="tool-icon ti-dynamo">DB</div>
-          <h4 class="tool-name">DynamoDB</h4>
-          <p class="tool-desc">Historial de ejecuciones del pipeline. Tabla <span class="mono">qa_executions</span> con
-            métricas de cada build para análisis de tendencias.</p>
-        </div>
-        <div class="tool-card reveal">
-          <div class="tool-icon ti-sqs">SQS</div>
-          <h4 class="tool-name">AWS SQS</h4>
-          <p class="tool-desc">Cola de notificaciones de fallos con Dead Letter Queue. Determina el resultado final del
-            build en Jenkins.</p>
-        </div>
+      </div>
+
+      <div class="featured-cta" style="text-align:center; margin-top: 3rem;">
+        <a href="https://github.com/MonacoSimon/qa-repository-coffee-cart" target="_blank" class="btn btn-primary btn-lg">
+          Ver repositorio completo →
+        </a>
       </div>
 
     </div>
