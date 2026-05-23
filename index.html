@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Título optimizado para SEO -->
+  <title>Simón Monaco — QA Automation Engineer | Portfolio de Testing</title>
+
+  <!-- Meta descripción (aparece en los resultados de búsqueda de Google) -->
+  <meta name="description"
+    content="Portfolio de Simón Monaco, QA Automation Engineer Junior. Proyectos de testing con Cypress, Jenkins, Docker, AWS, Postman y JMeter. Disponible para trabajar.">
+
+  <!-- Meta keywords -->
+  <meta name="keywords"
+    content="QA Automation, Testing, Cypress, Jenkins, Docker, AWS, Postman, JMeter, Newman, OWASP ZAP, Portfolio, Simón Monaco">
+
+  <!-- Autor y robots -->
+  <meta name="author" content="Simón Monaco">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical URL (evita contenido duplicado) -->
+  <link rel="canonical" href="https://monacosimon.github.io/interfaz-portfolio/">
+
+  <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://monacosimon.github.io/interfaz-portfolio/">
+  <meta property="og:title" content="Simón Monaco — QA Automation Engineer">
+  <meta property="og:description"
+    content="Portfolio de Simón Monaco, especialista en QA Automation. Proyectos con Cypress, Jenkins, Docker y AWS.">
+  <meta property="og:image" content="https://monacosimon.github.io/interfaz-portfolio/img/foto-linkedin.jpeg">
+  <meta property="og:image:alt" content="Simón Monaco - QA Automation Engineer">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Simón Monaco — QA Automation Engineer">
+  <meta name="twitter:description"
+    content="Portfolio de Simón Monaco, QA Automation Engineer Junior. Proyectos de testing automatizado.">
+  <meta name="twitter:image" content="https://monacosimon.github.io/interfaz-portfolio/img/foto-linkedin.jpeg">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&family=Syne:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <span class="nav-logo">SM<span class="accent">.</span></span>
+      <ul class="nav-links">
+        <li><a href="#sobre-mi">Sobre mí / About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#destacado">Coffee Cart</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menú de navegación">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Disponible para trabajar
+        </div>
+        <h1 class="hero-name">Simón<br><span class="accent">Monaco</span></h1>
+        <p class="hero-title">QA Automation Engineer <span class="hero-title-junior">Junior</span></p>
+        <p class="hero-desc">
+          Soy Simón. Me especializo en armar flujos de trabajo de testing que integran automatización, servicios cloud y
+          herramientas actuales. Uso metodologías ágiles como Scrum o Kanban, y Jira para la gestión — todo eso se ve
+          reflejado en los proyectos que fui subiendo. Vivo en Argentina, La Plata, y tengo un nivel de inglés B2.
+        </p>
+        <div class="hero-tags">
+          <span class="tag">Cypress</span>
+          <span class="tag">Jenkins</span>
+          <span class="tag">Docker</span>
+          <span class="tag">AWS</span>
+          <span class="tag">Postman</span>
+          <span class="tag">Apache JMeter</span>
+          <span class="tag">Newman</span>
+          <span class="tag">Python</span>
+          <span class="tag">C#</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Jira (Atlassian)</span>
+        </div>
+        <div class="hero-cta">
+          <a href="https://github.com/MonacoSimon" target="_blank" class="btn btn-primary" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/sim%C3%B3n-m%C3%B3naco-55a619273" target="_blank" class="btn btn-outline"
+            rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+            LinkedIn
+          </a>
+          <a href="mailto:simonmonaco2001@gmail.com" class="btn btn-outline">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="m22 7-10 7L2 7" />
+            </svg>
+            Email
+          </a>
+          <a href="https://wa.me/542942668844?text=Hola%20Sim%C3%B3n,%20vi%20tu%20portfolio%20y%20me%20interesa%20contactarte"
+            target="_blank" class="btn btn-outline" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12.032 2.003c-5.514 0-9.99 4.476-9.99 9.99 0 1.76.457 3.48 1.326 5.006L2 22l5.063-1.314c1.46.797 3.12 1.217 4.814 1.217 5.514 0 9.99-4.476 9.99-9.99 0-2.664-1.04-5.176-2.93-7.06-1.884-1.89-4.38-2.93-7.04-2.93h-.065zm0 1.8c2.185 0 4.245.85 5.79 2.39 1.54 1.54 2.39 3.59 2.39 5.78 0 4.5-3.66 8.16-8.16 8.16-1.44 0-2.84-.376-4.07-1.09l-.29-.17-3.01.78.8-2.94-.18-.3c-.79-1.29-1.21-2.76-1.21-4.25 0-4.51 3.66-8.17 8.17-8.17l.14.02zM8.45 7.33c-.13-.28-.27-.28-.4-.28h-.34c-.14 0-.36.05-.55.26-.19.21-.72.71-.72 1.73 0 1.02.74 2.01.85 2.15.11.14 1.46 2.23 3.53 3.13.49.21.88.34 1.18.44.5.16.95.14 1.31.08.4-.06 1.23-.5 1.41-.98.18-.48.18-.89.13-.98-.05-.09-.19-.14-.39-.25-.2-.11-1.18-.58-1.37-.65-.18-.07-.31-.11-.44.11-.13.22-.5.65-.61.78-.11.14-.22.16-.41.05-.19-.11-.8-.3-1.53-.94-.56-.5-.94-1.11-1.05-1.3-.11-.19-.01-.29.09-.39.09-.09.19-.23.29-.35.09-.12.12-.2.18-.34.06-.14.03-.26-.01-.37-.04-.11-.44-1.06-.6-1.45z" />
+            </svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="photo-ring"></div>
+        <div class="photo-wrapper">
+          <img src="img/foto-linkedin.jpeg" alt="Simón Monaco - QA Automation Engineer" class="profile-img"
+            loading="eager" />
+        </div>
+        <div class="photo-badge-tl">QA</div>
+        <div class="photo-badge-br">
+          <span class="mono">v1.0.0</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span class="mono">scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <section class="section" id="sobre-mi">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Sobre mí / About</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-lead">
+            Soy Simón, técnico en Análisis de Sistemas próximo a graduarme como
+            Técnico Universitario en Software Libre. Me especializo en QA Automation
+            y construyo proyectos reales que integran herramientas modernas de testing.
+          </p>
+          <p>
+            Además del testing manual, realizo casos de prueba, reportes de bugs y
+            automatizo procesos. Diseño flujos de trabajo completos con Jenkins y Docker,
+            automatizo pruebas con Cypress, Postman y Newman, analizo performance con
+            Apache JMeter, seguridad con OWASP ZAP y accesibilidad con Axe y Lighthouse.
+            En mi proyecto más avanzado integré servicios AWS reales usando LocalStack
+            para demostrar conocimiento en cloud.
+          </p>
+          <p>
+            Aprendo constantemente, construyo para aprender y documento lo que hago.
+            Busco mi primera experiencia laboral en IT donde pueda crecer dentro de un
+            equipo real.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-num accent">7+</span>
+            <span class="stat-label">Proyectos QA</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num accent">5</span>
+            <span class="stat-label">Tipos de testing</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num accent">B2</span>
+            <span class="stat-label">Inglés</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num accent">AWS</span>
+            <span class="stat-label">Cloud testing</span>
+          </div>
+          <div class="about-detail">
+            <span class="detail-label mono">Formación</span>
+            <span class="detail-val">Técnico en Análisis de Sistemas</span>
+            <span class="detail-val muted">Técnico Universitario en Software Libre <em>(en curso)</em></span>
+            <span class="detail-val muted">ISFDyT 210</span>
+          </div>
+          <div class="about-detail">
+            <span class="detail-label mono">Ubicación</span>
+            <span class="detail-val">Argentina</span>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Stack técnico</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <span class="cat-dot cat-auto"></span>
+            Automation
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-icon">⬡</span>Cypress</div>
+            <div class="skill-item"><span class="skill-icon">⬡</span>Postman</div>
+            <div class="skill-item"><span class="skill-icon">⬡</span>Newman</div>
+            <div class="skill-item"><span class="skill-icon">⬡</span>JMeter</div>
+            <div class="skill-item"><span class="skill-icon">⬡</span>OWASP ZAP</div>
+            <div class="skill-item"><span class="skill-icon">⬡</span>Axe</div>
+            <div class="skill-item"><span class="skill-icon">⬡</span>Lighthouse</div>
+            <div class="skill-item"><span class="skill-icon">⬡</span>Python</div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <span class="cat-dot cat-cloud"></span>
+            Cloud AWS
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-icon">⬡</span>S3</div>
+            <div class="skill-item"><span class="skill-icon">⬡</span>Lambda</div>
+            <div class="skill-item"><span class="skill-icon">⬡</span>DynamoDB</div>
+            <div class="skill-item"><span class="skill-icon">⬡</span>SQS</div>
+            <div class="skill-item"><span class="skill-icon">⬡</span>LocalStack</div>
+            <div class="skill-item"><span class="skill-icon">⬡</span>boto3</div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <span class="cat-dot cat-cicd"></span>
+            CI/CD & DevOps
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-icon">⬡</span>Jenkins</div>
+            <div class="skill-item"><span class="skill-icon">⬡</span>Docker</div>
+            <div class="skill-item"><span class="skill-icon">⬡</span>Docker Compose</div>
+            <div class="skill-item"><span class="skill-icon">⬡</span>Git</div>
+            <div class="skill-item"><span class="skill-icon">⬡</span>GitHub</div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <span class="cat-dot cat-manual"></span>
+            Manual QA
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-icon">⬡</span>Casos de prueba</div>
+            <div class="skill-item"><span class="skill-icon">⬡</span>Bug reports</div>
+            <div class="skill-item"><span class="skill-icon">⬡</span>Jira</div>
+            <div class="skill-item"><span class="skill-icon">⬡</span>Documentación QA</div>
+            <div class="skill-item"><span class="skill-icon">⬡</span>Evidencia visual</div>
+            <div class="skill-item"><span class="skill-icon">⬡</span>Testing exploratorio</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="proyectos">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Proyectos</h2>
+        <p class="section-sub">Evolución técnica — de testing manual a pipelines automatizados con cloud</p>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <span class="marker-num mono">01</span>
+          </div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <span class="tc-level level-basic">Inicial</span>
+              <h3 class="tc-title">QA Web Testing Project</h3>
+            </div>
+            <p class="tc-desc"><strong>URL:</strong> <a href="https://github.com/MonacoSimon/qa-web-testing-project"
+                target="_blank" class="tc-link-inline"
+                rel="noopener noreferrer">github.com/MonacoSimon/qa-web-testing-project</a><br>
+              <strong>Tecnologías:</strong> Cypress, JMeter, Postman, OWASP ZAP, Jira, Bash scripting<br>
+              <strong>Resumen:</strong> Proyecto de prueba integral sobre una aplicación web de homenaje a Malvinas
+              Argentinas (<a href="https://malvinas-argentinas-homenaje.web.app/" target="_blank"
+                rel="noopener noreferrer">malvinas-argentinas-homenaje.web.app</a>). Incluye pruebas de performance,
+              seguridad,
+              testing manual (casos de prueba y reporte de bugs) y automatización.<br>
+              <strong>Rol:</strong> QA Manual y QA Automation Engineer (diseño de casos de prueba, reporte de bugs y
+              automatización de pruebas funcionales).
+            </p>
+            <div class="tc-tags">
+              <span class="tc-tag">Testing manual</span>
+              <span class="tc-tag">Documentación</span>
+              <span class="tc-tag">Bug reports</span>
+            </div>
+            <a href="https://github.com/MonacoSimon/qa-web-testing-project" target="_blank" class="tc-link"
+              rel="noopener noreferrer">Ver repositorio →</a>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <span class="marker-num mono">02</span>
+          </div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <span class="tc-level level-basic">Básico</span>
+              <h3 class="tc-title">QA Repository — Space and Beyond</h3>
+            </div>
+            <p class="tc-desc"><strong>URL:</strong> <a
+                href="https://github.com/MonacoSimon/qa-repository-space-and-beyond" target="_blank"
+                class="tc-link-inline"
+                rel="noopener noreferrer">github.com/MonacoSimon/qa-repository-space-and-beyond</a><br>
+              <strong>Tecnologías:</strong> Cypress, Postman, JMeter, OWASP ZAP, Axe, Lighthouse, Bash scripting<br>
+              <strong>Resumen:</strong> Proyecto de QA completo sobre una aplicación de customización de viajes al
+              espacio (<a href="https://demo.testim.io/" target="_blank" rel="noopener noreferrer">demo.testim.io</a>).
+              Incluye pruebas de
+              seguridad, performance, APIs, automatización, casos de prueba y registro de bugs.<br>
+              <strong>Rol:</strong> QA Engineer (diseño y ejecución de toda la suite de pruebas).
+            </p>
+            <div class="tc-tags">
+              <span class="tc-tag">Cypress</span>
+              <span class="tc-tag">E2E</span>
+              <span class="tc-tag">Testing manual</span>
+            </div>
+            <a href="https://github.com/MonacoSimon/qa-repository-space-and-beyond" target="_blank" class="tc-link"
+              rel="noopener noreferrer">Ver repositorio →</a>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <span class="marker-num mono">03</span>
+          </div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <span class="tc-level level-mid">Intermedio</span>
+              <h3 class="tc-title">QA Repository — BlazeDemo</h3>
+            </div>
+            <p class="tc-desc"><strong>URL:</strong> <a href="https://github.com/MonacoSimon/qa-repository-blaze-demo"
+                target="_blank" class="tc-link-inline"
+                rel="noopener noreferrer">github.com/MonacoSimon/qa-repository-blaze-demo</a><br>
+              <strong>Tecnologías:</strong> Apache JMeter, Cypress, OWASP ZAP, Axe, Lighthouse, Postman<br>
+              <strong>Resumen:</strong> Plan de pruebas completo sobre BlazeDemo, aplicación de reservas de vuelos de
+              uso común en prácticas de QA (<a href="https://blazedemo.com/" target="_blank"
+                rel="noopener noreferrer">blazedemo.com</a>).
+              Incluye pruebas de performance, accesibilidad, seguridad y automatización.<br>
+              <strong>Rol:</strong> QA Engineer (planificación y ejecución de pruebas) y QA Manual (diseño de casos de
+              prueba y reporte de bugs).
+            </p>
+            <div class="tc-tags">
+              <span class="tc-tag">Cypress</span>
+              <span class="tc-tag">Automation</span>
+              <span class="tc-tag">Casos de prueba</span>
+            </div>
+            <a href="https://github.com/MonacoSimon/qa-repository-blaze-demo" target="_blank" class="tc-link"
+              rel="noopener noreferrer">Ver repositorio →</a>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <span class="marker-num mono">04</span>
+          </div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <span class="tc-level level-mid">Intermedio</span>
+              <h3 class="tc-title">QA Repository — Product Store</h3>
+            </div>
+            <p class="tc-desc"><strong>URL:</strong> <a
+                href="https://github.com/MonacoSimon/qa-repository-product-store" target="_blank" class="tc-link-inline"
+                rel="noopener noreferrer">github.com/MonacoSimon/qa-repository-product-store</a><br>
+              <strong>Tecnologías:</strong> Cypress, JMeter, Postman, Newman, OWASP ZAP, Docker, Docker Compose<br>
+              <strong>Resumen:</strong> Proyecto de QA completo sobre una tienda de productos e-commerce (<a
+                href="https://www.demoblaze.com/" target="_blank" rel="noopener noreferrer">demoblaze.com</a>). Incluye
+              pruebas de seguridad,
+              performance, APIs (Postman + Newman para ejecución por línea de comandos), automatización, casos de
+              prueba y reporte de bugs. Cada tipo de prueba cuenta con su propio contenedor Docker, orquestados con
+              Docker Compose, que además genera y almacena los reportes de ejecución.<br>
+              <strong>Rol:</strong> QA Engineer (diseño de arquitectura de testing y ejecución) y QA Manual (diseño de
+              casos de prueba y reporte de bugs).
+            </p>
+            <div class="tc-tags">
+              <span class="tc-tag">Postman</span>
+              <span class="tc-tag">API testing</span>
+              <span class="tc-tag">REST</span>
+            </div>
+            <a href="https://github.com/MonacoSimon/qa-repository-product-store" target="_blank" class="tc-link"
+              rel="noopener noreferrer">Ver repositorio →</a>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <span class="marker-num mono">05</span>
+          </div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <span class="tc-level level-mid">Intermedio</span>
+              <h3 class="tc-title">QA Repository — API Test Postman (DummyJSON)</h3>
+            </div>
+            <p class="tc-desc"><strong>URL:</strong> <a
+                href="https://github.com/MonacoSimon/qa-repository-api-test-postman" target="_blank"
+                class="tc-link-inline"
+                rel="noopener noreferrer">github.com/MonacoSimon/qa-repository-api-test-postman</a><br>
+              <strong>Tecnologías:</strong> Postman, Newman<br>
+              <strong>Resumen:</strong> Suite de pruebas de API sobre DummyJSON (<a href="https://dummyjson.com/docs/"
+                target="_blank" rel="noopener noreferrer">dummyjson.com/docs</a>), API REST pública de práctica.
+              Demuestra el dominio completo
+              de operaciones REST: GET, POST, PUT, PATCH, DELETE, autenticación y validaciones de respuesta.<br>
+              <strong>Rol:</strong> QA Engineer (diseño y ejecución de colecciones Postman).
+            </p>
+            <div class="tc-tags">
+              <span class="tc-tag">Postman</span>
+              <span class="tc-tag">Newman</span>
+              <span class="tc-tag">CLI automation</span>
+            </div>
+            <a href="https://github.com/MonacoSimon/qa-repository-api-test-postman" target="_blank" class="tc-link"
+              rel="noopener noreferrer">Ver repositorio →</a>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <span class="marker-num mono">06</span>
+          </div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <span class="tc-level level-advanced">Avanzado</span>
+              <h3 class="tc-title">QA Repository — Juice Shop (OWASP)</h3>
+            </div>
+            <p class="tc-desc"><strong>URL:</strong> <a href="https://github.com/MonacoSimon/qa-repository-juice-shop"
+                target="_blank" class="tc-link-inline"
+                rel="noopener noreferrer">github.com/MonacoSimon/qa-repository-juice-shop</a><br>
+              <strong>Tecnologías:</strong> Cypress, OWASP ZAP, Postman, Apache JMeter, Docker, Docker Compose,
+              Jenkins<br>
+              <strong>Resumen:</strong> Suite completa de pruebas QA sobre OWASP Juice Shop, aplicación web
+              deliberadamente vulnerable utilizada para prácticas de seguridad. Cada tipo de prueba cuenta con su
+              propio contenedor Docker, orquestados con Docker Compose e integrados en un pipeline CI/CD con Jenkins.
+              La aplicación se ejecuta en un contenedor Docker propio, lo que requiere la comunicación entre múltiples
+              contenedores y el levantamiento ordenado de servicios antes de correr las pruebas. Docker y Jenkins
+              generan y almacenan reportes de ejecución.<br>
+              <strong>Rol:</strong> QA Engineer (diseño de pipeline completo de testing) y QA Manual (diseño de casos
+              de prueba y reporte de bugs).
+            </p>
+            <div class="tc-tags">
+              <span class="tc-tag">OWASP ZAP</span>
+              <span class="tc-tag">Security testing</span>
+              <span class="tc-tag">Docker</span>
+              <span class="tc-tag">Cypress</span>
+            </div>
+            <a href="https://github.com/MonacoSimon/qa-repository-juice-shop" target="_blank" class="tc-link"
+              rel="noopener noreferrer">Ver repositorio →</a>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal timeline-featured">
+          <div class="timeline-marker marker-featured">
+            <span class="marker-num mono">07</span>
+          </div>
+          <div class="timeline-card card-featured">
+            <div class="tc-header">
+              <span class="tc-level level-expert">Proyecto principal</span>
+              <h3 class="tc-title">QA Repository — Coffee Cart</h3>
+            </div>
+            <p class="tc-desc"><strong>URL:</strong> <a href="https://github.com/MonacoSimon/qa-repository-coffee-cart"
+                target="_blank" class="tc-link-inline"
+                rel="noopener noreferrer">github.com/MonacoSimon/qa-repository-coffee-cart</a><br>
+              <strong>Tecnologías:</strong> Cypress, Postman, Newman, JMeter, OWASP ZAP, Axe, Lighthouse, Docker,
+              Docker Compose, Jenkins, AWS (S3, DynamoDB) simulado con LocalStack, Boto3 (Python)<br>
+              <strong>Resumen:</strong> Proyecto más completo del portfolio. Suite de QA sobre Coffee Cart, aplicación
+              de pedidos de café (<a href="https://coffee-cart.app/" target="_blank"
+                rel="noopener noreferrer">coffee-cart.app</a>). Incluye
+              pruebas de performance, APIs, seguridad, accesibilidad, automatización y testing manual. Cada tipo de
+              prueba tiene su propio contenedor Docker, orquestados con Docker Compose e integrados en un pipeline
+              CI/CD con Jenkins. Utiliza AWS (S3 y DynamoDB vía Boto3) para almacenar resultados, artefactos y
+              métricas de las pruebas. Docker y Jenkins generan y almacenan reportes de ejecución.<br>
+              <strong>Rol:</strong> QA Engineer (arquitectura completa del sistema de testing con integración cloud) y
+              QA Manual (diseño de casos de prueba y reporte de bugs).
+            </p>
+            <div class="tc-tags">
+              <span class="tc-tag">Jenkins</span>
+              <span class="tc-tag">Docker</span>
+              <span class="tc-tag">Cypress</span>
+              <span class="tc-tag">Newman</span>
+              <span class="tc-tag">JMeter</span>
+              <span class="tc-tag">ZAP</span>
+              <span class="tc-tag">AWS</span>
+              <span class="tc-tag">LocalStack</span>
+              <span class="tc-tag">Python</span>
+            </div>
+            <a href="https://github.com/MonacoSimon/qa-repository-coffee-cart" target="_blank"
+              class="tc-link tc-link-featured" rel="noopener noreferrer">Ver repositorio →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="destacado">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Coffee Cart — Proyecto destacado</h2>
+        <p class="section-sub">Pipeline de QA end-to-end con infraestructura cloud real</p>
+      </div>
+
+      <div class="featured-intro">
+        <p>
+          Este repositorio es la demostración más completa de mis capacidades como QA Automation Engineer.
+          Integra 6 tipos de testing distintos en un pipeline Jenkins de 10 stages, cada suite aislada en su
+          propio contenedor Docker, con servicios AWS reales simulados via LocalStack para almacenamiento,
+          validación automática y trazabilidad de resultados.
+        </p>
+        <a href="https://github.com/MonacoSimon/qa-repository-coffee-cart" target="_blank" class="btn btn-primary"
+          rel="noopener noreferrer" style="margin-top:1.5rem;display:inline-flex;">
+          Ver repositorio en GitHub →
+        </a>
+      </div>
+
+      <div class="cc-metrics reveal">
+        <div class="cc-metric">
+          <span class="cc-metric-num accent">10</span>
+          <span class="cc-metric-label mono">stages en el pipeline</span>
+        </div>
+        <div class="cc-metric">
+          <span class="cc-metric-num accent">6</span>
+          <span class="cc-metric-label mono">tipos de testing</span>
+        </div>
+        <div class="cc-metric">
+          <span class="cc-metric-num accent">4</span>
+          <span class="cc-metric-label mono">servicios AWS</span>
+        </div>
+        <div class="cc-metric">
+          <span class="cc-metric-num accent">4</span>
+          <span class="cc-metric-label mono">cargas JMeter (20/50/80/100 users)</span>
+        </div>
+        <div class="cc-metric">
+          <span class="cc-metric-num accent">66</span>
+          <span class="cc-metric-label mono">commits en main</span>
+        </div>
+      </div>
+
+      <div class="pipeline-section reveal">
+        <div class="pipeline-section-title mono">Jenkinsfile — 10 stages del pipeline real</div>
+        <div class="pipeline-stages">
+          <div class="ps-item">
+            <span class="ps-num mono">01</span>
+            <div class="ps-content">
+              <span class="ps-name">Clean up</span>
+              <span class="ps-desc mono">Limpia contenedores y redes previas</span>
+            </div>
+          </div>
+          <div class="ps-arrow">↓</div>
+          <div class="ps-item">
+            <span class="ps-num mono">02</span>
+            <div class="ps-content">
+              <span class="ps-name">API Tests — Newman</span>
+              <span class="ps-desc mono">Colección Postman · reportes JSON + XML + JUnit</span>
+            </div>
+          </div>
+          <div class="ps-arrow">↓</div>
+          <div class="ps-item">
+            <span class="ps-num mono">03</span>
+            <div class="ps-content">
+              <span class="ps-name">Cypress E2E</span>
+              <span class="ps-desc mono">Tests de interfaz en Docker · reportes HTML</span>
+            </div>
+          </div>
+          <div class="ps-arrow">↓</div>
+          <div class="ps-item">
+            <span class="ps-num mono">04</span>
+            <div class="ps-content">
+              <span class="ps-name">JMeter Performance</span>
+              <span class="ps-desc mono">20 / 50 / 80 / 100 usuarios · .jtl + dashboard</span>
+            </div>
+          </div>
+          <div class="ps-arrow">↓</div>
+          <div class="ps-item">
+            <span class="ps-num mono">05</span>
+            <div class="ps-content">
+              <span class="ps-name">OWASP ZAP Security</span>
+              <span class="ps-desc mono">Análisis de vulnerabilidades · reporte HTML</span>
+            </div>
+          </div>
+          <div class="ps-arrow">↓</div>
+          <div class="ps-item">
+            <span class="ps-num mono">06</span>
+            <div class="ps-content">
+              <span class="ps-name">LocalStack Init</span>
+              <span class="ps-desc mono">Levanta infraestructura AWS local</span>
+            </div>
+          </div>
+          <div class="ps-arrow">↓</div>
+          <div class="ps-item">
+            <span class="ps-num mono">07</span>
+            <div class="ps-content">
+              <span class="ps-name">Cloud Setup</span>
+              <span class="ps-desc mono">S3 · SQS · DynamoDB · Lambda con boto3</span>
+            </div>
+          </div>
+          <div class="ps-arrow">↓</div>
+          <div class="ps-item ps-item-post">
+            <span class="ps-num mono">post</span>
+            <div class="ps-content">
+              <span class="ps-name">Always · Upload + Poll</span>
+              <span class="ps-desc mono">Sube reportes a S3 · consulta SQS para pass/fail · apaga contenedores</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cc-arch reveal">
+        <div class="cc-arch-title mono">Arquitectura AWS (LocalStack)</div>
+        <div class="cc-arch-grid">
+          <div class="arch-card">
+            <div class="arch-icon">S3</div>
+            <h4>qa-reports-coffee-cart</h4>
+            <p>Reportes por suite y fecha. Estructura: <span class="mono">suite/YYYYMMDD-HHMMSS/</span></p>
+          </div>
+          <div class="arch-card">
+            <div class="arch-icon">λ</div>
+            <h4>Lambda — Validación</h4>
+            <p>Evalúa umbrales de calidad por suite. Retorna <span class="mono">PASS / FAIL</span> automáticamente.</p>
+          </div>
+          <div class="arch-card">
+            <div class="arch-icon">DB</div>
+            <h4>DynamoDB — qa_executions</h4>
+            <p>Historial de builds. Métricas por ejecución para análisis de tendencias entre versiones.</p>
+          </div>
+          <div class="arch-card">
+            <div class="arch-icon">SQS</div>
+            <h4>Cola de fallos + DLQ</h4>
+            <p>Notificaciones de errores por suite. El pipeline consulta la cola para determinar el build final.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cc-testing-layers reveal">
+        <div class="cc-arch-title mono">Capas de testing cubiertas</div>
+        <div class="testing-layers-grid">
+          <div class="layer-row">
+            <span class="layer-badge lb-e2e">E2E</span>
+            <div class="layer-info">
+              <strong>Cypress</strong>
+              <span>Flujos de usuario en interfaz — contenedor Docker — reportes HTML</span>
+            </div>
+          </div>
+          <div class="layer-row">
+            <span class="layer-badge lb-api">API</span>
+            <div class="layer-info">
+              <strong>Newman / Postman</strong>
+              <span>Endpoints REST — colecciones parametrizadas — salida JSON + XML + JUnit</span>
+            </div>
+          </div>
+          <div class="layer-row">
+            <span class="layer-badge lb-perf">PERF</span>
+            <div class="layer-info">
+              <strong>JMeter</strong>
+              <span>Carga con 20, 50, 80 y 100 usuarios — dashboard de tiempos de respuesta y error rate</span>
+            </div>
+          </div>
+          <div class="layer-row">
+            <span class="layer-badge lb-sec">SEC</span>
+            <div class="layer-info">
+              <strong>OWASP ZAP</strong>
+              <span>Escaneo de vulnerabilidades — clasificación por riesgo — reporte HTML</span>
+            </div>
+          </div>
+          <div class="layer-row">
+            <span class="layer-badge lb-a11y">A11Y</span>
+            <div class="layer-info">
+              <strong>Axe / Lighthouse</strong>
+              <span>Cumplimiento WCAG — accesibilidad y performance — reportes HTML</span>
+            </div>
+          </div>
+          <div class="layer-row">
+            <span class="layer-badge lb-cloud">CLOUD</span>
+            <div class="layer-info">
+              <strong>boto3 / LocalStack</strong>
+              <span>S3, Lambda, DynamoDB, SQS — scripts Python — integración CI/CD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="featured-cta" style="text-align:center; margin-top: 3rem;">
+        <a href="https://github.com/MonacoSimon/qa-repository-coffee-cart" target="_blank"
+          class="btn btn-primary btn-lg" rel="noopener noreferrer">
+          Ver repositorio completo →
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Skills / Tecnologías</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <h4>Herramientas y DevOps</h4>
+          <p>Cypress, Jenkins, Docker, AWS, LocalStack, Newman, JMeter, OWASP ZAP, Jira (Atlassian)</p>
+        </div>
+        <div class="skill-card reveal">
+          <h4>Lenguajes</h4>
+          <p>Python, C#, HTML, CSS, JavaScript</p>
+        </div>
+        <div class="skill-card reveal">
+          <h4>Métodos</h4>
+          <p>Metodologías ágiles: Scrum, Kanban — aplicadas en proyectos académicos y personales.</p>
+        </div>
+        <div class="skill-card reveal">
+          <h4>GitHub</h4>
+          <p>Tengo proyectos de programación en GitHub que pueden consultarse como referencia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="featured-cta">
+    <a href="https://github.com/MonacoSimon/qa-repository-coffee-cart" target="_blank" class="btn btn-primary btn-lg"
+      rel="noopener noreferrer">
+      Ver repositorio completo →
+    </a>
+  </div>
+
+  <section class="section" id="academico">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Formación y experiencia académica</h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <div class="edu-year mono accent">Act.</div>
+          <div class="edu-content">
+            <h3 class="edu-title">Analista Programador Universitario</h3>
+            <p class="edu-inst">Universidad Nacional de La Plata (UNLP) — 2025 - presente</p>
+            <p class="edu-desc">Formación en fundamentos de la disciplina y tecnologías actuales para el trabajo
+              profesional en sistemas de pequeña y mediana complejidad.</p>
+            <div class="edu-role">
+              <span class="role-badge">En curso</span>
+            </div>
+          </div>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-year mono">2018</div>
+          <div class="edu-content">
+            <h3 class="edu-title">Bachiller — Bachillerado en Física y Matemática</h3>
+            <p class="edu-inst">ISFD N° 13 "República de Nicaragua", Zapala (Neuquén)</p>
+            <p class="edu-desc">Nivel secundario completado — Graduado 2018.</p>
+          </div>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-year mono">2024</div>
+          <div class="edu-content">
+            <h3 class="edu-title">Técnico en Análisis de Sistemas</h3>
+            <p class="edu-inst">Instituto de Formación Docente y Técnica 210</p>
+            <p class="edu-desc">Formación técnica en análisis, diseño y desarrollo de sistemas. Base sólida en
+              metodologías de desarrollo, bases de datos y programación. Rol de QA Automation desempeñado durante el
+              proyecto final en el instituto — graduado 2024.</p>
+            <div class="edu-role">
+              <span class="role-badge">Rol QA en proyecto terciario</span>
+            </div>
+          </div>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-year mono accent">2026</div>
+          <div class="edu-content">
+            <h3 class="edu-title">Técnico Universitario en Software Libre</h3>
+            <p class="edu-inst">Universidad Nacional del Litoral — 2026</p>
+            <p class="edu-desc">Orientación en Desarrollo de Software con enfoque en herramientas y filosofía open
+              source. Recibido este año como técnico; participación con rol de desarrollador en proyectos con software
+              libre.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="section-header">
+        <h3 class="section-sub">Cursos y certificados</h3>
+      </div>
+      <ol class="cert-list">
+        <li>
+          <strong>Curso completo de QA Engineer desde 0 hasta avanzado</strong><br>
+          Nysde Hurtado — Expedición: may. 2026 — Duración: 136.5 horas<br>
+        </li>
+        <li>
+          <strong>English Discoveries — Upper Intermediate 1</strong><br>
+          Gobierno de la Ciudad de Buenos Aires — Expedición: may. 2025
+        </li>
+        <li>
+          <strong>Curso C# Nivel 1</strong><br>
+          Maxi Programa — Expedición: ene. 2023
+        </li>
+        <li>
+          <strong>Curso de reparación de computadoras</strong><br>
+          Universidad Nacional de La Plata (UNLP) — Expedición: ene. 2025
+        </li>
+        <li>
+          <strong>EF SET Inglés — 76/100 (C2 Proficiente)</strong><br>
+          EF SET — Expedición: ene. 2026
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="contacto">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Contacto</h2>
+        <p class="section-sub">Disponible para posiciones QA Automation o QA Manual con proyección a automation</p>
+      </div>
+      <div class="contact-grid">
+        <a href="https://www.linkedin.com/in/sim%C3%B3n-m%C3%B3naco-55a619273" target="_blank"
+          class="contact-card reveal" rel="noopener noreferrer">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </div>
+          <h4 class="contact-label">LinkedIn</h4>
+          <p class="contact-val">Simón Monaco</p>
+        </a>
+        <a href="https://github.com/MonacoSimon" target="_blank" class="contact-card reveal" rel="noopener noreferrer">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+          </div>
+          <h4 class="contact-label">GitHub</h4>
+          <p class="contact-val">MonacoSimon</p>
+        </a>
+        <a href="mailto:simonmonaco2001@gmail.com" class="contact-card reveal">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="m22 7-10 7L2 7" />
+            </svg>
+          </div>
+          <h4 class="contact-label">Email</h4>
+          <p class="contact-val">simonmonaco2001@gmail.com</p>
+        </a>
+        <a href="https://wa.me/542942668844?text=Hola%20Sim%C3%B3n,%20vi%20tu%20portfolio%20y%20me%20interesa%20contactarte"
+          target="_blank" class="contact-card reveal" rel="noopener noreferrer">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12.032 2.003c-5.514 0-9.99 4.476-9.99 9.99 0 1.76.457 3.48 1.326 5.006L2 22l5.063-1.314c1.46.797 3.12 1.217 4.814 1.217 5.514 0 9.99-4.476 9.99-9.99 0-2.664-1.04-5.176-2.93-7.06-1.884-1.89-4.38-2.93-7.04-2.93h-.065zm0 1.8c2.185 0 4.245.85 5.79 2.39 1.54 1.54 2.39 3.59 2.39 5.78 0 4.5-3.66 8.16-8.16 8.16-1.44 0-2.84-.376-4.07-1.09l-.29-.17-3.01.78.8-2.94-.18-.3c-.79-1.29-1.21-2.76-1.21-4.25 0-4.51 3.66-8.17 8.17-8.17l.14.02zM8.45 7.33c-.13-.28-.27-.28-.4-.28h-.34c-.14 0-.36.05-.55.26-.19.21-.72.71-.72 1.73 0 1.02.74 2.01.85 2.15.11.14 1.46 2.23 3.53 3.13.49.21.88.34 1.18.44.5.16.95.14 1.31.08.4-.06 1.23-.5 1.41-.98.18-.48.18-.89.13-.98-.05-.09-.19-.14-.39-.25-.2-.11-1.18-.58-1.37-.65-.18-.07-.31-.11-.44.11-.13.22-.5.65-.61.78-.11.14-.22.16-.41.05-.19-.11-.8-.3-1.53-.94-.56-.5-.94-1.11-1.05-1.3-.11-.19-.01-.29.09-.39.09-.09.19-.23.29-.35.09-.12.12-.2.18-.34.06-.14.03-.26-.01-.37-.04-.11-.44-1.06-.6-1.45z" />
+            </svg>
+          </div>
+          <h4 class="contact-label">WhatsApp</h4>
+          <p class="contact-val">+54 2942 66-8844</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <span class="mono footer-copy">Simon Monaco — QA Automation Engineer Junior — Argentina</span>
+      <span class="mono footer-built">Built with vanilla HTML, CSS & JS</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- Schema.org JSON-LD para mejorar la visualización en Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Simón Monaco",
+    "alternateName": "Simon Monaco",
+    "jobTitle": "QA Automation Engineer",
+    "description": "Portfolio de Simón Monaco, QA Automation Engineer Junior. Especializado en testing automatizado con Cypress, Jenkins, Docker y AWS.",
+    "url": "https://monacosimon.github.io/interfaz-portfolio/",
+    "image": "https://monacosimon.github.io/interfaz-portfolio/img/foto-linkedin.jpeg",
+    "email": "simonmonaco2001@gmail.com",
+    "sameAs": [
+      "https://github.com/MonacoSimon",
+      "https://www.linkedin.com/in/sim%C3%B3n-m%C3%B3naco-55a619273"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Freelance / Open to work"
+    },
+    "knowsAbout": ["QA Automation", "Cypress", "Jenkins", "Docker", "AWS", "Postman", "JMeter", "OWASP ZAP"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "La Plata",
+      "addressCountry": "Argentina"
+    }
+  }
+  </script>
+</body>
+
+</html>
