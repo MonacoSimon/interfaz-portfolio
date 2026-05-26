@@ -69,6 +69,27 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const sections = document.querySelectorAll('section[id]');
 const navAnchors = document.querySelectorAll('.nav-links a');
 
+const copyEmailBtn = document.getElementById('copyEmailBtn');
+if (copyEmailBtn) {
+  const email = copyEmailBtn.dataset.email;
+  const label = copyEmailBtn.querySelector('.btn-copy-label');
+  const originalLabel = label ? label.textContent.trim() : 'Copiar email';
+
+  copyEmailBtn.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(email);
+      if (label) label.textContent = '¡Copiado!';
+      copyEmailBtn.classList.add('copied');
+      setTimeout(() => {
+        if (label) label.textContent = originalLabel;
+        copyEmailBtn.classList.remove('copied');
+      }, 1500);
+    } catch (error) {
+      console.error('No se pudo copiar el correo:', error);
+    }
+  });
+}
+
 window.addEventListener('scroll', () => {
   let current = '';
   sections.forEach(section => {
