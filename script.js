@@ -55,7 +55,7 @@ skillCategories.forEach(cat => skillObserver.observe(cat));
 
 // Smooth scroll offset for fixed navbar
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
+  anchor.addEventListener('click', function (e) {
     const target = document.querySelector(this.getAttribute('href'));
     if (target) {
       e.preventDefault();
@@ -66,7 +66,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Active nav link highlight on scroll
 const sections = document.querySelectorAll('section[id]');
 const navAnchors = document.querySelectorAll('.nav-links a');
 
@@ -82,7 +81,6 @@ window.addEventListener('scroll', () => {
   });
 });
 
-// Timeline stagger
 const timelineItems = document.querySelectorAll('.timeline-item');
 const timelineObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry, i) => {
@@ -102,3 +100,43 @@ timelineItems.forEach(item => {
   item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
   timelineObserver.observe(item);
 });
+
+const lightbox = document.getElementById('imageLightbox');
+const lightboxImage = document.getElementById('lightboxImage');
+const lightboxCaption = document.getElementById('lightboxCaption');
+const lightboxClose = document.getElementById('lightboxClose');
+const lightboxOverlay = document.getElementById('lightboxOverlay');
+
+const openLightbox = (img) => {
+  lightboxImage.src = img.src;
+  lightboxImage.alt = img.alt || '';
+  lightboxCaption.textContent = img.alt || '';
+  lightbox.classList.add('open');
+  document.body.style.overflow = 'hidden';
+};
+
+const closeLightbox = () => {
+  lightbox.classList.remove('open');
+  lightboxImage.src = '';
+  lightboxCaption.textContent = '';
+  document.body.style.overflow = '';
+};
+
+document.querySelectorAll('.gallery-img').forEach(img => {
+  img.addEventListener('click', () => openLightbox(img));
+});
+
+lightboxClose.addEventListener('click', closeLightbox);
+lightboxOverlay.addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', (event) => {
+  if (event.target === lightbox) {
+    closeLightbox();
+  }
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && lightbox.classList.contains('open')) {
+    closeLightbox();
+  }
+});
+
