@@ -470,7 +470,7 @@ body {
 
 /* HERO SCROLL */
 .hero-scroll {
-  position: absolute;
+  position: relative;
   bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
