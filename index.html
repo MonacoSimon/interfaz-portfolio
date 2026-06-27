@@ -6,7 +6,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6X63EFKC2Z"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-6X63EFKC2Z');
@@ -842,7 +842,7 @@
     </div>
   </section>
 
-  <section class="section" id="academico">
+  <section class="section section-dark" id="academico">
     <div class="container">
       <div class="section-header">
         <h2 class="section-title">Formación y experiencia académica</h2>
@@ -940,7 +940,37 @@
   </div>
   </section>
 
-  <section class="section section-dark" id="contacto">
+  <section class="section section-dark" id="knowledge-base">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Knowledge Base &amp; Study Notes</h2>
+        <p class="section-sub">Repositorio centralizado de documentación técnica, guías y laboratorios prácticos</p>
+      </div>
+      <div class="about-text" style="max-width: 900px; margin: 0 auto;">
+        <p>
+          <a href="https://github.com/MonacoSimon#knowledge-base--study-notes" target="_blank"
+            rel="noopener noreferrer">Acceso al repositorio centralizado de documentación técnica, guías estructuradas,
+            esquemas de validación y laboratorios prácticos desarrollados durante mi formación:</a>
+        </p>
+        <h3 class="section-sub" style="margin-top: 1.5rem; margin-bottom: 0.75rem;">QA Study Notes Index</h3>
+        <ul style="padding-left: 1.2rem; line-height: 1.8;">
+          <li><strong>Fundamentos y Gestión:</strong> Aseguramiento de Calidad (QA Manual, ciclo PDCA, taxonomía de
+            fallas) e Ingeniería de gestión y reportes en Jira Software.</li>
+          <li><strong>Automatización de Pruebas:</strong> Frameworks E2E modernos en Cypress y Playwright,
+            automatización e inyección CLI en Postman y Newman, y contratos JSON Schema con Python.</li>
+          <li><strong>Especializaciones e Infraestructura:</strong> Ingeniería de rendimiento con Apache JMeter,
+            análisis dinámico de vulnerabilidades (DAST) con OWASP ZAP, orquestación de contenedores en Docker,
+            automatización Cloud local con AWS/LocalStack (Boto3) y pipelines de integración continua en Jenkins.</li>
+        </ul>
+        <p style="margin-top: 1rem;">
+          <a href="https://monacosimon.github.io/qa-study-notes/" target="_blank" class="tc-link-inline"
+            rel="noopener noreferrer">qa-study-notes (Live Dashboard)</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contacto">
     <div class="container">
       <div class="section-header">
         <h2 class="section-title">Contacto</h2>
@@ -1011,8 +1041,9 @@
       <span class="mono footer-copy">Simon Monaco — QA Automation Engineer Junior — Argentina</span>
       <span class="mono footer-built">Built with vanilla HTML, CSS & JS</span>
       <p style="margin-top:10px;font-size:.85rem;opacity:.7;">
-      Este sitio utiliza Google Analytics para recopilar estadísticas anónimas de uso y mejorar la experiencia del usuario.
-    </p>
+        Este sitio utiliza Google Analytics para recopilar estadísticas anónimas de uso y mejorar la experiencia del
+        usuario.
+      </p>
     </div>
   </footer>
 
