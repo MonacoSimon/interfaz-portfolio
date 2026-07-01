@@ -543,7 +543,8 @@
               propio contenedor Docker, orquestados con Docker Compose e integrados en un pipeline CI/CD con Jenkins.
               La aplicación se ejecuta en un contenedor Docker propio, lo que requiere la comunicación entre múltiples
               contenedores y el levantamiento ordenado de servicios antes de correr las pruebas. Docker y Jenkins
-              generan y almacenan reportes de ejecución.<br>
+              generan y almacenan reportes de ejecución. Además, en la automatización de Cypress se aplica la
+              arquitectura POM (Page Object Model) para estructurar las pruebas de forma más mantenible y escalable.<br>
               <strong>Rol:</strong> QA Engineer (diseño de pipeline completo de testing) y QA Manual (diseño de casos
               de prueba y reporte de bugs).
             </p>
@@ -587,7 +588,10 @@
               accesibilidad, automatización y testing manual. Cada tipo de prueba tiene su propio contenedor Docker,
               orquestados con Docker Compose e integrados en un pipeline CI/CD con Jenkins. Utiliza AWS (S3 y DynamoDB
               vía Boto3) para almacenar resultados, artefactos y métricas de las pruebas. Docker y Jenkins generan y
-              almacenan reportes de ejecución.<br>
+              almacenan reportes de ejecución. En la automatización con Cypress se implementa la arquitectura POM
+              (Page Object Model), que separa la interacción con la interfaz en objetos reutilizables, facilitando la
+              lectura, el mantenimiento y la escalabilidad de las pruebas cuando cambian los flujos o selectores de la
+              aplicación.<br>
               <strong>Rol:</strong> QA Engineer (arquitectura completa del sistema de testing con integración cloud) y
               QA Manual (diseño de casos de prueba y reporte de bugs).
             </p>
@@ -632,7 +636,9 @@
           Este repositorio es la demostración más completa de mis capacidades como QA Automation Engineer.
           Integra 6 tipos de testing distintos en un pipeline Jenkins de 10 stages, cada suite aislada en su
           propio contenedor Docker, con servicios AWS reales simulados via LocalStack para almacenamiento,
-          validación automática y trazabilidad de resultados.
+          validación automática y trazabilidad de resultados. En la capa de automatización E2E, las pruebas de
+          Cypress están diseñadas con arquitectura POM (Page Object Model), separando la interacción con la UI en
+          objetos reutilizables para mejorar la mantenibilidad y escalabilidad de los tests.
         </p>
         <a href="https://github.com/MonacoSimon/qa-repository-coffee-cart" target="_blank" class="btn btn-primary"
           rel="noopener noreferrer" style="margin-top:1.5rem;display:inline-flex;">
